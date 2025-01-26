@@ -1,0 +1,42 @@
+/*Commnon */
+.text-white {
+    color: #fff !important;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #content .section-content {
+    width: 800px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .row {
+    margin-right: -8px;
+    margin-left: -8px;
+  }
+  .col {
+    float: left;
+    /* tác hại là cái member-item sẽ bị co lại ( di chuyển sang 
+    1 mặt phẳngg khác , cách khắc phục là dùng 1) overflow : hidden    
+                                                2) tạo 1 div là clear và css :  */
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .col-third {
+    box-sizing: border-box;
+    display: block;
+    width: 33.33333%
+  }
+  .col-half {
+    width: 50% ;
+  }
+  .col-full {
+    width: 100%;
+  }
+  
