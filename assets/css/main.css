@@ -182,7 +182,7 @@ html {
   /* Kyx thuat : padding - top : 50% */
   /* 50% là kích thước chiều rộng của chính nó mà width nó bằng width trình duyệt*/
   margin-top: 46px;
-  background: url("/HTML/PRACTICE_PROJECT/assets/img/la.jpg") top center / cover
+  background: url("https://github.com/Mineptp/The-band-w3-/blob/main/assets/img/la.jpg?raw=true") top center / cover
     no-repeat;
   position: relative;
 }
