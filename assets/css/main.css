@@ -26,9 +26,12 @@ html {
 }
 #content .section-content {
   width: 800px;
+  max-width: 100%; /*RPC */ /* as 768px < 800 => let max-width = 100% screen */
   padding: 64px 0px 112px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .mt-8 {
   margin-top: 8px !important;
@@ -36,7 +39,9 @@ html {
 .mt-16 {
   margin-top: 16px !important;
 }
-
+.mt-32 {
+  margin-top: 32px !important;
+}
 .row {
   margin-right: -8px;
   margin-left: -8px;
@@ -72,6 +77,7 @@ html {
   display: inline-block; /* vì bản chất thằng a là thằng inline sẽ k đè được thg block */
   margin-top: 16px;
   border: none;
+  text-align: center;
 }
 .btn:hover {
   color: #000;
@@ -105,6 +111,8 @@ html {
   top: 0;
   left: 0;
   right: 0;
+  
+
   #nav,
   .subnav {
     list-style: none;
@@ -118,7 +126,6 @@ html {
   }
 
   #nav > li {
-    display: inline-block;
     position: relative;
   }
   #nav > li > a {
@@ -162,14 +169,29 @@ html {
   #nav .nav-arrow-down {
     font-size: 14px;
   }
+  .mobile-search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+  }
+  .mobile-search-btn,
   .search-btn {
     float: right;
     padding: 0px 21px;
   }
+
   .search-btn:hover {
     background-color: #f44336;
     cursor: pointer;
   }
+  .mobile-search-btn:hover {
+    background-color: #ccc;
+  }
+  .mob-icon:hover {
+    color: #000;
+  }
+  .mob-icon,
   .search-icon {
     color: #fff;
     font-size: 20px;
@@ -182,8 +204,7 @@ html {
   /* Kyx thuat : padding - top : 50% */
   /* 50% là kích thước chiều rộng của chính nó mà width nó bằng width trình duyệt*/
   margin-top: 46px;
-  background: url("https://www.w3schools.com/w3images/la.jpg") top center / cover
-    no-repeat;
+  background: url("../img/chicago.jpg") top center / cover no-repeat;
   position: relative;
 }
 #slider .text-content {
@@ -207,6 +228,7 @@ html {
   font-size: 24px;
 }
 #slider .text-descrip {
+  text-shadow: 0 0 1px #000;
   font-size: 15px;
   margin-top: 25px;
 }
@@ -237,22 +259,16 @@ html {
   line-height: 1.4;
 }
 #content .memmber-list {
-  margin-top: 48px;
+  margin-top: 32px;
   overflow: hidden;
 }
-/* #content .member-item {
- 
-
-  text-align: center;
-} */
-
 /* #content .clear {
   clear: both;
 } */
 #content .member-name {
   font-size: 15px;
 }
-#content .member-item img {
+#content .member-img {
   width: 154px;
   height: 154px;
   margin-top: 15px;
@@ -265,12 +281,12 @@ html {
   background-color: #000;
   /* padding: 1rem; */
 }
-#content .content-section {
+/* #content .content-section {
   max-width: 800px;
 
   margin-left: auto;
   margin-right: auto;
-}
+} */
 .ticket-list {
   background-color: #fff;
   /*/margin-left: auto;
@@ -340,7 +356,6 @@ html {
   margin-top: 15px;
   line-height: 1.4;
 }
-
 
 #footer {
 }
@@ -439,6 +454,13 @@ html {
   font-size: 18px;
   line-height: 1.5;
 }
+.contact-inf a {
+  color :#101aef;
+  opacity: 0.8;
+}
+.contact-inf a:hover {
+  opacity: 1;
+}
 .contact-inf i[class*="ti-"] {
   width: 30px;
   display: inline-block;
@@ -450,7 +472,7 @@ html {
   padding: 13px;
   border: 1px solid #ccc;
   width: 100%;
-} 
+}
 /* .form-submit-btn {
   background-color: #000;
   border:none;
@@ -460,37 +482,35 @@ html {
   padding: 13px 20px;
 
 } */
- /* Map -section */
+/* Map -section */
 .map-section img {
   width: 100%;
 }
 
 /* Footer */
-#footer{
+#footer {
   padding: 64px 16px;
   text-align: center;
 }
-#footer .scoial-lists {
+#footer .social-lists {
   font-size: 24px;
 }
-#footer .scoial-lists a {
-  color:rgba(0,0,0,0.6);
+#footer .social-lists a {
+  color: rgba(0, 0, 0, 0.6);
   text-decoration: none;
 }
 #footer .copyright a,
-#footer .scoial-lists a:hover{
-  color:rgba(0,0,0,0.4);
-
-} 
-#footer .copyright  {
+#footer .social-lists a:hover {
+  color: rgba(0, 0, 0, 0.4);
+}
+#footer .copyright {
   font-size: 15px;
- margin-top: 15px;
- color:rgba(0,0,0,0.6);
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.6);
 }
 #footer .copyright a {
-  color:rgba(0,0,0,0.6);
+  color: rgba(0, 0, 0, 0.6);
   text-decoration: revert;
- 
 }
 
 @keyframes modalFadein {

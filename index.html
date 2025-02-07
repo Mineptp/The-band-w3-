@@ -6,13 +6,14 @@
     <title>The band</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png">
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />     <!-- file css nào càng ở dưới thì càng đc ưu tiên-->
     <link rel="stylesheet" href="./assets/font/font/themify-icons.css" />
     
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body>
     <div id="main">
-      <div id="header">
+      <div id="header"> 
         <!-- Begin nav -->
         <ul id="nav">
           <li><a href="#">Home</a></li>
@@ -36,6 +37,9 @@
         <!-- Begin Search Button -->
         <div class="search-btn">
           <i class="search-icon ti-search"></i>
+        </div>
+        <div id="mobile-menu" class="mobile-search-btn">
+          <i class="mob-icon ti-menu"></i>
         </div>
       </div>
       <div id="slider">
@@ -66,17 +70,17 @@
           </p>
 
           <div class="row memmber-list">
-            <div class="col col-third member-item text-center">
+            <div class="col col-third member-item text-center  s-col-full mt-32 ">
               <p class="member-name">Name</p>
-              <img src="./assets/img/member1.jpg" alt="member1" />
+              <img  class="member-img" src="./assets/img/member1.jpg" alt="member1" />
             </div>
-            <div class="col col-third member-item text-center">
+            <div class="col col-third member-item text-center  s-col-full mt-32 ">
               <p class="member-name">Name</p>
-              <img src="./assets/img/member1.jpg" alt="member2" />
+              <img  class="member-img" src="./assets/img/member1.jpg" alt="member2" />
             </div>
-            <div class="col col-third member-item text-center">
+            <div class="col col-third member-item text-center  s-col-full mt-32 ">
               <p class="member-name">Name</p>
-              <img src="./assets/img/member1.jpg" alt="member3mber3" />
+              <img  class="member-img" src="./assets/img/member1.jpg" alt="member3mber3" />
             </div>
             <div class="clear"></div>
           </div>
@@ -98,7 +102,7 @@
             </ul>
             <!-- Place  -->
             <div class="row place-list">
-              <div class="col place-item col-third">
+              <div class="col place-item col-third s-col-full mt-16">
                 <img class="place-img" src="./assets/img/place1.jpg" alt="NY" />
                 <div class="place-content">
                   <h3 class="place-heading">New York</h3>
@@ -106,12 +110,12 @@
                   <p class="place-des">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button href="#" class="btn js-buy-ticket">
+                  <button href="#" class="btn js-buy-ticket s-full-width">
                     Buy Tickets
                   </button>
                 </div>
               </div>
-              <div class="col place-item col-third">
+              <div class="col place-item col-third s-col-full mt-16">
                 <img class="place-img" src="./assets/img/place2.jpg" alt="NY" />
                 <div class="place-content">
                   <h3 class="place-heading">Paris</h3>
@@ -119,15 +123,15 @@
                   <p class="place-des">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button href="#" class="btn js-buy-ticket">
+                  <button href="#" class="btn js-buy-ticket s-full-width">
                     Buy Tickets
                   </button>
                 </div>
               </div>
-              <div class="col place-item col-third">
+              <div class="col place-item col-third s-col-full mt-16">
                 <img
                   class="place-img"
-                  src="./assets/img/sanfran.jpg"
+                  src="./assets/img/place3.jpg"
                   alt="NY"
                 />
                 <div class="place-content">
@@ -136,7 +140,7 @@
                   <p class="place-des">
                     Praesent tincidunt sed tellus ut rutrum sed vitae justo.
                   </p>
-                  <button href="#" class="btn js-buy-ticket">
+                  <button href="#" class="btn js-buy-ticket s-full-width">
                     Buy Tickets
                   </button>
                 </div>
@@ -149,29 +153,29 @@
           <h2 class="section-head">CONTACT</h2>
           <p class="section-sub-head">Fan? Drop a note!</p>
           <div class=" row contact-content">
-            <div class="col col-half contact-inf">
+            <div class="col col-half contact-inf s-col-full">
               <p><i class="ti-location-pin"></i>Chicago, US</p>
-              <p><i class="ti-mobile"></i>Phone: +00 151515</p>
-              <p><i class="ti-email"></i>Email: mail@mail.com</p>
+              <p><i class="ti-mobile"></i>Phone: <a href="tel:+00 151515">+00 151515</a> </p>
+              <p><i class="ti-email"></i>Email: <a href="mailto:mail@mail.com ">mail@mail.com</a></p>
             </div>
-            <div class="col col-half contact-form">
+            <div class="col col-half contact-form  s-col-full">
               <form action="">
                 <div class="row">
-                  <div class="col col-half">
+                  <div class="col col-half s-col-full">
                  <input type="text " placeholder="Name" class="form-control .ouline-form">
                   </div>
-                  <div class="col col-half">
+                  <div class="col col-half s-col-full s-mt-8">
                     <input  type="email" placeholder="Email"  class="form-control .ouline-form" />
                   </div>
                   <!-- <div class="clearfix"></div> -->
                 </div>
                 <div class="row mt-8">
-                  <div class="col col-full">
+                  <div class="col col-full ">
                     <input type="text" placeholder="Message"  class="form-control .ouline-form" />
                   </div>
                   <div class="clearfix"></div>
                 </div>
-                <input class="btn mt-16 pull-right"type="submit" style="cursor: pointer;" value="SEND" />
+                <input class="btn mt-16 pull-right s-full-width"type="submit" style="cursor: pointer;" value="SEND" />
                 
               </form>
             </div>
@@ -187,13 +191,13 @@
         <img src="./assets/img/map.jpg" alt="map">
       </div>
       <div id="footer">
-        <div class="scoial-lists">
-          <a href="" ><i class="ti-facebook"></i></a>
-          <a href="" ><i class="ti-instagram"></i></a>
-          <a href="" ><i class="ti-youtube"></i></a>
-          <a href="" ><i class="ti-pinterest-alt"></i></a>
-          <a href="" ><i class="ti-twitter-alt"></i></a>
-          <a href="" ><i class="ti-linkedin"></i></a>
+        <div class="social-lists">
+          <a href="" class="sc" ><i class="ti-facebook"></i></a>
+          <a href="" class="sc" ><i class="ti-instagram"></i></a>
+          <a href="" class="sc" ><i class="ti-youtube"></i></a>
+          <a href="" class="sc" ><i class="ti-pinterest-alt"></i></a>
+          <a href="" class="sc" ><i class="ti-twitter-alt"></i></a>
+          <a href="" class="sc" ><i class="ti-linkedin"></i></a>
           <p class="copyright"> Powered by <a href="#">LokiNguyen</a></p>
         </div>
       </div>
@@ -238,6 +242,42 @@
         </footer>
       </div>
     </div>
+    <script>
+      var header = document.getElementById('header');
+      console.log(header)
+      var Header_Height = header.clientHeight
+      var mobile_menu = document.getElementById('mobile-menu')
+      // đóng mở mobile-menu
+      mobile_menu.onclick = function () {
+        var isClose = header.clientHeight  === Header_Height ;
+        if(isClose) {
+          header.style.height = 'auto';
+        }
+        else {
+          header.style.height = null;
+        }
+         }
+       // tự động đóng khi chọn mneu
+       var menuItems = document.querySelectorAll('#nav li a[href*="#"]')  
+       console.log(menuItems)
+       for(var i = 0;i < menuItems.length;i++) {
+          var menuItem = menuItems[i] ;
+         
+          menuItem.onclick = function(event) {
+            // this là thằng mình click vào thuộc menuItem
+            var isParentMenu = this.nextElementSibling &&  this.nextElementSibling.classList.contains('subnav');
+            console.log(isParentMenu)
+            if(isParentMenu) {
+              event.preventDefault();// ngăn chặn hành vi mặc định
+            } else {
+                header.style.height = null;
+
+            }
+          }
+        }
+
+    </script>
   </body>
   <script src="./assets/javascript/modal.js "></script>
 </html>
+            
